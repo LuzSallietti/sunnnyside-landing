@@ -43,16 +43,11 @@ import { useRef } from 'react';
 
 const Home = () => {    
     const mobileMenu = useRef(null)   
-    const windowHandler = () => {
-        window.addEventListener('resize', () => {
-            window.location.reload()
-        })
-    }
+    
     useEffect(() => { 
         setTimeout(() => {
         Aos.init({duration:1250, offset:200})
-        },1000)
-        windowHandler()
+        },1000)        
         }, []);
 
 const responsiveMenu = () => {
