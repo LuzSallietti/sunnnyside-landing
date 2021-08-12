@@ -1,0 +1,10 @@
+@import '../../assets/scss/helpers/mixins.scss';
+@import '../../assets/scss/helpers/variables.scss';
+
+.logo {
+    width: 175px;
+    height: auto;
+    img {
+        @include image;
+    }
+}

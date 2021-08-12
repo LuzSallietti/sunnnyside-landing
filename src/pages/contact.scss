@@ -1,0 +1,20 @@
+@import '../assets/scss/helpers/variables.scss';
+@import '../assets/scss/helpers/mixins.scss';
+@import '../assets/scss/helpers/animations.scss';
+
+.contact-main {
+    background-color: $white;
+    height: 100vh;    
+    background-image: url('../assets/images/desktop/oranges.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-title {
+    font-family: $headings_font;
+    color: $bold_blue;
+    text-align: center;    
+    padding: 3rem 0;
+    @media (max-width: 767px){
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,40 @@
+@import '../../assets/scss/helpers/mixins.scss';
+@import '../../assets/scss/helpers/variables.scss';
+
+.service {
+    width:50%;
+    position:relative;
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
+}
+.service-img{
+    img {
+        @include image;
+    }
+}
+.service-desc {
+    position: absolute;
+    top: 75%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 66%;
+    @media (max-width: 1023px){
+        width: 80%;
+    }
+    h3 {
+        font-family: $headings_font;
+        font-size: 1.25rem;
+    }
+    p {
+        padding-top: 2rem;
+        line-height: 1.5rem;
+    }    
+}
+.green {
+    color: $footer_color;
+}
+.dark-blue {
+    color:$dark-blue;
+}

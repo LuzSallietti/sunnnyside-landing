@@ -1,0 +1,21 @@
+@import '../../assets/scss/helpers/mixins.scss';
+@import '../../assets/scss/helpers/variables.scss';
+
+.photo-box-features{
+    width: 50%;
+    img {
+        @include image;
+    }
+    @media (max-width:1023px) {
+        width: 100%;        
+    }
+}
+.photo-box-gallery{
+    width: 25%;
+    @media (max-width:1023px){
+        width: 50%;
+    }
+    img {
+        @include image;
+    }
+}

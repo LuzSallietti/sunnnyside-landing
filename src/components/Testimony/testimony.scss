@@ -1,0 +1,34 @@
+@import '../../assets/scss/helpers/mixins.scss';
+@import '../../assets/scss/helpers/variables.scss';
+
+.testimony {
+    flex:33%;
+    padding: .75rem;
+    text-align: center;
+    @include flex(column, wrap, space-around, center);
+    align-content:space-around;
+    @media (max-width: 1023px){
+        flex: 100%;
+    }
+
+}
+.testimony-img {
+    @include circle(70px);
+    img {
+        @include image;
+        border-radius: 100%;
+    }
+}
+.testimony-quote{
+    padding: 3rem 0rem;
+    color: $bold_gray;
+    line-height: 1.5rem;
+}
+.testimony-name{
+    font-family: $headings_font;
+    color: $bold_blue;
+}
+.testimony-charge{
+    color: $gray;
+    font-size: .75rem;
+}

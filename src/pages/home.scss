@@ -1,0 +1,93 @@
+@import "../assets/scss/helpers/mixins.scss";
+@import "../assets/scss/helpers/variables.scss";
+@import "../assets/scss/helpers/animations.scss";
+
+.main {  
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.main-header {
+  background-color: transparent;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  width: 100%; /*check this*/
+}
+
+.header-nav {
+  @include flex(row, nowrap, space-between, center);
+}
+.toggler {
+  color: $white;
+}
+.triangle-up {
+	width: 0;
+  height: 0;
+  border-left: 25px solid transparent;    
+  border-bottom: 25px solid $white;
+  position: absolute;
+  top: -.75rem;
+  right: 0px;
+}
+.menu-wrapper {
+  display: none;   
+}
+.show-wrapper {  
+  display: block;
+  position: absolute;
+  background-color: $white;
+  top: 75%;
+  right: 2rem;
+  padding: 2rem 3rem;
+}
+.article {
+  @include flex(row, nowrap, space-between, center);
+  @media (max-width: 1023px){
+    flex-wrap: wrap;
+  }
+}
+.services-container {
+  @include flex(row, nowrap, space-between, center);
+  @media (max-width:1023px) {
+    flex-wrap: wrap;    
+  }
+}
+.testimonials-container {
+  @include flex(row, wrap, space-between, center);
+  padding: 9rem 5rem;
+  @media (max-width:1023px){
+    padding: 3rem 1.5rem;
+  }
+}
+.testimonials-title {
+    font-family: $headings_font;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.33rem;
+    letter-spacing: .2rem;
+    color: $gray;
+}
+.testimonials-ul{
+    width: 100%;
+    @include flex(row, nowrap, center, center);
+    @media (max-width: 1023px) {
+      flex-wrap: wrap;      
+    }
+}
+.gallery {
+    @include flex(row, nowrap, space-between,center);
+    @media (max-width:1023px) {
+      flex-wrap: wrap;      
+    }
+}
+.footer {
+    background-color: $cyan;
+    @include flex(column, wrap, center, center);
+    padding: 4rem 0rem;
+}
+.fadeIn{
+  animation: fadeIn 2s ease;
+}

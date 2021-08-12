@@ -1,0 +1,43 @@
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }    
+    to {
+        opacity: 1;
+    }
+}
+@keyframes h1appear {
+    from {
+        top: 0;
+    }
+    to {
+        top:30%;
+    }
+}
+@keyframes arrowAppear {
+    from {
+        top :0;
+        visibility: hidden;
+    }
+    to {
+        top:50%;
+        visibility: visible;
+    }
+}
+
+@keyframes translateFromTop {
+    from {
+      top: -100%;
+    }
+    to {
+        top: 0;        
+        }   
+}
+@keyframes translateFromTop50{
+    from {
+        top: -100%;
+    }
+    to {
+        top: 50%;
+    }
+}

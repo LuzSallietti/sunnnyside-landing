@@ -1,0 +1,39 @@
+@import '../../assets/scss/helpers/mixins.scss';
+@import '../../assets/scss/helpers/variables.scss';
+
+.menu-header {
+    @include flex(row, nowrap, flex-end, center);
+    @include size (80%, auto);
+    margin: 0 auto;
+    @media (max-width: 1023px) {
+        @include flex(column, wrap, center, center);
+        padding:1rem 0;        
+    }
+    li {
+        margin-right: 55px;
+        @media (max-width: 1023px) {            
+            margin: .5rem 0;
+        }
+        a {
+            color: $white;
+            @media (max-width: 1023px) {
+                color: $gray;
+            }            
+        }
+    }    
+}
+.menu-footer{
+    @include flex(row, nowrap, flex-end, center);
+    @include size (100%, auto);
+    margin: 0 auto;
+    li {
+        margin: 55px 27px;
+        a {
+            color: $footer_color;
+            transition: color ease 0.25s;
+            &:hover{
+                color: $white;
+            }
+        }
+    }    
+}

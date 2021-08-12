@@ -1,0 +1,17 @@
+@import '../../assets/scss/helpers/mixins.scss';
+@import '../../assets/scss/helpers/variables.scss';
+
+.rss-menu{
+    @include flex(row, nowrap, space-between, center);
+    width:40%;
+    margin: 0 auto;
+    li {
+        a {
+            color:$footer_color;
+            transition: color ease 0.25s;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
