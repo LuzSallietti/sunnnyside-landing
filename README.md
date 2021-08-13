@@ -37,7 +37,7 @@ Users should be able to:
 
 ### What I learned
 
-I'm proud of this landing page because I gave my first steps with React JS. I tried to put the first concepts I learned about functional componentes on practice. I also tried a service worker for first time, I'm so exciting to advance on the PWA's world.
+I'm proud of this landing page because I gave my first steps with React JS to create it. I tried to put the first concepts I learned about functional components on practice. I also implemented a service worker for first time, I'm so exciting to advance on the PWA's world on the near future.
 
 ## Author
 
